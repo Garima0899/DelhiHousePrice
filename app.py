@@ -58,5 +58,5 @@ input_df = pd.DataFrame(input_data)
 
 # Predict and display the result
 if st.sidebar.button("Predict Price"):
-    prediction = model.predict(input_df)[0]*10^9
+    prediction = model.predict(input_df)[0]*10**9
     st.success(f"The predicted resale price is ₹{prediction:,.2f}")
